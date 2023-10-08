@@ -1,0 +1,28 @@
+:root {
+    font-family: 'Roboto', sans-serif;
+    --white: #ffffff;
+    --blue: #1992d4;
+    --gray: #e2e8f0;
+    --orange: #f0b429;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) repeat(1, 4fr);
+    grid-template-rows: repeat(1, 1fr) repeat(1, 3fr); 
+}
+
+.header {
+    background-color: var(--white);
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.sidebar {
+    background-color: var(--blue);
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.main-content {
+    background-color: var(--gray);
+}
