@@ -21,17 +21,25 @@
 }
 
 .header > div {
-    padding: 2rem;
+    padding: 1rem 2rem;
+}
+
+.top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .search-bar-container {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
     gap: 1rem;
+    width: 70%;
 }
 
 .header-svg {
-    width: 1.6rem;
+    width: 2rem;
 }
 
 #search-bar:focus {
@@ -40,13 +48,31 @@
 
 #search-bar {
     border: 2px solid transparent;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: var(--gray);
     height: 1.5rem;
     font-size: 1.2rem;
-    width: 50%;
+    width: 100%;
     padding: 0.1rem 0.5rem;
     outline: none;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+#profile-picture{
+    border-radius: 100%;
+    width: 3rem;
+}
+
+.profile-container > h2 {
+    width: 100%;
+    white-space: nowrap;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
 .sidebar {
