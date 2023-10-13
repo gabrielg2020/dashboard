@@ -14,8 +14,22 @@
 }
 
 .header {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
     background-color: var(--white);
     grid-area: 1 / 2 / 2 / 3;
+}
+
+.header > div {
+    padding: 2rem;
+}
+
+#search-bar {
+    border: none;
+    border-radius: 10px;
+    background-color: var(--gray);
+    height: 1.5rem;
+    width: 50%;
 }
 
 .sidebar {
