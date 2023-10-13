@@ -16,11 +16,9 @@
 .header {
     display: grid;
     grid-template-columns: repeat(1,1fr);
+    gap: 1rem;
     background-color: var(--white);
     grid-area: 1 / 2 / 2 / 3;
-}
-
-.header > div {
     padding: 1rem 2rem;
 }
 
@@ -28,6 +26,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.profile-picture{
+    border-radius: 100%;
 }
 
 .search-bar-container {
@@ -63,8 +65,7 @@
     gap: 2rem;
 }
 
-#profile-picture{
-    border-radius: 100%;
+.profile-container > .profile-picture{
     width: 3rem;
 }
 
@@ -73,6 +74,51 @@
     white-space: nowrap;
     font-size: 1.1rem;
     font-weight: bold;
+}
+
+.bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    gap: 1rem;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.text-container > p {
+    font-size: 0.8rem;
+}
+
+.text-container > h2 {
+    font-size: 1.4rem;
+}
+
+.left > .profile-picture {
+    width: 5rem;
+}
+
+.right {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.right > button {
+    border: none;
+    border-radius: 20px;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
 }
 
 .sidebar {
