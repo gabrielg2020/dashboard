@@ -121,6 +121,19 @@
     font-size: 1rem;
 }
 
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(1,3fr) repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr) repeat(2,9fr);
+    background-color: var(--gray);
+    padding: 1rem 2rem;
+}
+
+.main-content > h2 {
+    font-weight: bold;
+    align-self: end;
+}
+
 .sidebar {
     display: flex;
     flex-direction: column;
@@ -157,10 +170,6 @@
 
 h1 > .sidebar-svg {
     width: 2.3rem;
-}
-
-.main-content {
-    background-color: var(--gray);
 }
 
 a, a:visited {
