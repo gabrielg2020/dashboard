@@ -144,7 +144,7 @@
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(3,1fr);
     grid-area: 2 / 1 / 5 / 1;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 .sidebar {
