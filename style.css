@@ -147,6 +147,16 @@
     gap: 1rem;
 }
 
+.card > div {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+}
+
+.card > div > img {
+    width: 1.5rem;
+}
+
 .sidebar {
     display: flex;
     flex-direction: column;
